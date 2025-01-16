@@ -24,7 +24,6 @@ jobs:
           default: stringParamDefaultValue
           required: true
         numberParam:
-          type: number
           default: 1
           required: true
         boolParam:
