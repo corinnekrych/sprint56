@@ -20,9 +20,11 @@ jobs:
       instructions: ""
       approvalInputs: |
         stringParam:
+          type: string
           default: stringParamDefaultValue
           required: true
         numberParam:
+          type: number
           default: 1
           required: true
         boolParam:
@@ -30,6 +32,7 @@ jobs:
           default: false
           required: true
         choiceParam:
+          type: choice
           options:
             - opt1
             - opt2
