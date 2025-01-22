@@ -19,6 +19,7 @@ jobs:
       approvers: 015d04e8-5bcb-11eb-93be-42010a83aee8
       disallowLaunchByUser: false
       instructions: ""
+      debug: true
       approvalInputs: |
         stringParam:
           type: string
