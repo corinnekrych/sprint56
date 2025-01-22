@@ -41,4 +41,4 @@ jobs:
           default: opt2
           required: true
     timeout-minutes: 4320
-    delegates: cloudbees-io/manual-approval/.cloudbees/testing/custom-job.yml@2b4767ce1a49fe8b24f75b9be029be81c48aa108
+    delegates: cloudbees-io/manual-approval/.cloudbees/testing/custom-job.yml
