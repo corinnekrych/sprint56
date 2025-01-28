@@ -16,8 +16,9 @@ jobs:
       - approval-job
   approval-job:
     with:
-      approvers: 015d04e8-5bcb-11eb-93be-42010a83aee8
+      approvers: ""
       disallowLaunchByUser: false
+      notifyAllEligibleUsers: false
       instructions: ""
       approvalInputs: |
         stringParam:
@@ -39,4 +40,4 @@ jobs:
           default: ""
           required: true
     timeout-minutes: 4320
-    delegates: cloudbees-io/manual-approval/.cloudbees/testing/custom-job.yml
+    delegates: cloudbees-io/manual-approval/custom-job.yml@v1
