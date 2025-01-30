@@ -24,9 +24,6 @@ jobs:
         stringParam:
           type: string
           required: true
-        stringParam:
-          type: string
-          required: true
         numberParam:
           type: number
           default: 3.9
