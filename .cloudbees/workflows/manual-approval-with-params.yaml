@@ -54,4 +54,4 @@ jobs:
             - op2
           description: a choice input          
     timeout-minutes: 4320
-    delegates: cloudbees-io/manual-approval/.cloudbees/testing/custom-job.yml
+    delegates: cloudbees-io/manual-approval/custom-job.yml
