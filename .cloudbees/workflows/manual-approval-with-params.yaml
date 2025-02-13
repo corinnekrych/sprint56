@@ -18,8 +18,7 @@ jobs:
     with:
       approvers: ""
       disallowLaunchByUser: false
-      notifyAllEligibleUsers: false
-      instructions: ""
+      instructions: sss
       approvalInputs: |
         stringParam:
           type: string
@@ -41,17 +40,18 @@ jobs:
           required: true
         choiceParam1:
           type: choice
-          default: op1
           options:
             - op1
             - op2
+          default: op1
           description: a choice input
         choiceParam2:
           type: choice
-          required: true
           options:
             - op1
             - op2
-          description: a choice input          
+          default: ""
+          required: true
+          description: a choice input
     timeout-minutes: 4320
-    delegates: cloudbees-io/manual-approval/custom-job.yml
+    delegates: cloudbees-io/manual-approval/custom-job.yml@v1
