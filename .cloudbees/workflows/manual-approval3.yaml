@@ -24,9 +24,6 @@ jobs:
       notifyAllEligibleUsers: false
       instructions: ""
       approvalInputs: |
-        numberParam:
-          type: number
-          default: 2
         stringParam:
           type: string
           default: ""
