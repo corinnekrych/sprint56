@@ -23,9 +23,5 @@ jobs:
       disallowLaunchByUser: false
       notifyAllEligibleUsers: false
       instructions: ""
-      approvalInputs: |
-        stringParam:
-          type: string
-          default: ""
     timeout-minutes: 4320
     delegates: cloudbees-io/manual-approval/.cloudbees/testing/custom-job.yml
