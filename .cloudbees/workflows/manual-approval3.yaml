@@ -3,7 +3,9 @@ kind: workflow
 name: My workflow
 on:
   workflow_dispatch:
-
+    inputs:
+      tot:
+        type: string
 jobs:
   build:
     steps:
@@ -18,7 +20,9 @@ jobs:
     with:
       approvers: ""
       disallowLaunchByUser: false
-      notifyAllEligibleUsers: false
       instructions: ""
+      approvalInputs: |
+        dddd:
+          type: string
     timeout-minutes: 4320
-    delegates: cloudbees-io/manual-approval/.cloudbees/testing/custom-job.yml
+    delegates: cloudbees-io/manual-approval/custom-job.yml@v1
