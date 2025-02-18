@@ -18,7 +18,7 @@ jobs:
       - approval-job
   approval-job:
     with:
-      approvers: ""
+      approvers: 43712e7e-0905-11ee-a417-42010a83ae08
       disallowLaunchByUser: false
       instructions: ""
       approvalInputs: |
