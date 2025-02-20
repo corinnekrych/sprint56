@@ -14,7 +14,7 @@ on:
         required: true
       boolParam:
         type: boolean
-        default: false
+        default: true
         required: true
       choiceParam:
         type: choice
