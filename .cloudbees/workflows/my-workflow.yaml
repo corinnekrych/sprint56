@@ -3,6 +3,26 @@ kind: workflow
 name: My workflow
 on:
   workflow_dispatch:
+    inputs:
+      stringParam:
+        type: string
+        default: string default
+        required: true
+      numberParam:
+        type: number
+        default: 0
+        required: true
+      boolParam:
+        type: boolean
+        default: false
+        required: true
+      choiceParam:
+        type: choice
+        options:
+          - opt1
+          - opt2
+        default: opt2
+        required: true
 jobs:
   build:
     steps:
@@ -20,4 +40,3 @@ jobs:
       approvers: 015d04e8-5bcb-11eb-93be-42010a83aee8
       disallowLaunchByUser: false
       instructions: ""
-
