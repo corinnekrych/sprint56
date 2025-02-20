@@ -6,7 +6,6 @@ on:
     inputs:
       stringParam:
         type: string
-        default: string default
         required: true
       numberParam:
         type: number
